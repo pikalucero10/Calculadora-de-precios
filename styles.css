@@ -1,0 +1,149 @@
+/* Estilo global para todos los elementos desplegables */
+*,
+*::before,
+*::after {
+  --background-color: #000; /* Fondo negro */
+  --text-color: #fff; /* Texto blanco */
+}
+
+/* Estilo para los elementos desplegables */
+select {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Estilo para las opciones desplegables */
+select option {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-size: 16px; /* Tamaño de fuente de las opciones desplegables */
+}
+
+/* Estilo para las opciones desplegables cuando se pasa el mouse */
+select option:hover {
+  background-color: #333; /* Cambia el color de fondo al pasar el mouse */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  width: 90%;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 28px;
+  margin-top: 0;
+  color: #333;
+}
+
+.input-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.input-group {
+  flex-basis: 48%;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="number"],
+select {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 25px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#cantidad {
+  width: 80%;
+}
+
+.resultado {
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.container:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+#resultado {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  color: #333;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#pesoResultado {
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.hover-zoom option:hover {
+  font-size: 1.2em;
+  transition: font-size 0.3s ease;
+}
+
+.calculation-box {
+  display: flex;
+  align-items: center;
+}
+
+.calculation-box label,
+.calculation-box input[type="number"],
+.calculation-box button {
+  margin-right: 10px;
+}
+
+.container-left {
+  background-color: #ffc107;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-right {
+  background-color: #e2ff07;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+

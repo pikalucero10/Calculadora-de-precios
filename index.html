@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Precios</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container-left">
+        <div class="seleccion-redes">
+            <h2>Selecciona una red social:</h2>
+            <select id="redSocial" onchange="actualizarTipoDeRed()">
+                <option value="instagram">Instagram</option>
+                <option value="Facebook">Facebook</option>
+                <!-- Otras redes sociales se pueden agregar aquí -->
+            </select>
+        </div>
+        <div class="input-container">
+            <div class="input-group">
+                <label id="servicio-label" for="servicio"
+                >Selecciona el tipo de servicio:</label
+                >
+                <select id="servicio" onchange="actualizarPrecio()">
+                    <!-- Opciones de servicio se agregarán dinámicamente aquí -->
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="tipoServicio">Tipo de Servicio:</label>
+                <select id="tipoServicio" onchange="mostrarInfoAdicional()"></select>
+            </div>
+        </div>
+        <div class="calculation-box">
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" value="1000" />
+            <label for="profit">Margen de Ganancia (%):</label>
+            <input type="number" id="profit" value="100" />
+            <button onclick="calcularPrecio()">Calcular Precio</button>
+        </div>
+        <div id="resultado" class="resultado"></div>
+    </div>
+
+    <div class="container-right">
+        <h1>Conversor de Dólar a Pesos</h1>
+        <label for="exchangeRate"
+            >Tipo de cambio actual (1 dólar = X pesos):</label
+        >
+        <input type="number" id="exchangeRate" value="1037" />
+        <button onclick="actualizarTipoDeCambio()">
+            Actualizar Tipo de Cambio
+        </button>
+        <hr />
+        <label for="usdAmount">Cantidad en Dólares:</label>
+        <input type="number" id="usdAmount" value="100" />
+        <button onclick="convertToPesos()">Convertir a Pesos</button>
+        <div id="pesoResultado" class="resultado"></div>
+        <hr />
+        <h1>Conversor de Pesos a Dolar</h1>
+        <label for="pesoAmount">Cantidad en Pesos:</label>
+        <input type="number" id="pesoAmount" value="103700" />
+        <button onclick="convertToDollars()">Convertir a Dólares</button>
+        <div id="dollarResultado" class="resultado"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
