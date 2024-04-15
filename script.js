@@ -17,8 +17,6 @@ function actualizarTipoDeRed() {
       servicioSelect.innerHTML = `
         <option value="seguidores">Seguidores</option>
         <option value="meGusta">Likes</option>
-        <option value="views">Vistas</option>
-        <option value="alcance">Alcance e Impresiones</option>
       `;
       break;
     case "Facebook":
@@ -71,10 +69,9 @@ function actualizarPrecio() {
       switch (document.getElementById("redSocial").value) {
         case "instagram":
           agregarOpciones("Seguidores Instagram", [
-            {nombre: "🔴 7679 - Instagram Followers + Likes %15+Story views %20+Profile views %20 | Lifetime Refill", precio: 0.00059 },
-            {nombre: "🔴 7626 - Premium Instagram Followers | Max 5M | Lifetime Refill ♻️ | 20K Per Day", precio: 0.00057 },
             {nombre: "🔵 ID 368 - Seguidores reales de Instagram - Max 100k", precio: 0.000864 },
-            {nombre: "🔵 ID 3149 - Instagram - Seguidores con apariencia real - R365 - Max. 200K", precio: 0.00045 }
+            {nombre: "🔴 ID 7422 - 💃 Instagram Seguidores LatinoAmerica | %100 Usuario Reales", precio: 0.00385 },
+            {nombre: "🔴 ID 6279 - 🙂 Seguidores - Instagram | 100% Real Usuarios Premium | Max 1K |  Incremento Natural", precio: 0.00217 }
           ]);
           break;
 
@@ -88,20 +85,12 @@ function actualizarPrecio() {
       break;
     case "meGusta":
       agregarOpciones("Likes Instagram", [
-        { nombre: "🔴 7680 - ❤️ Instagram Likes | Max 500K | Mix Users | 30K Per Hours - $0.04 por 1000", precio: 0.00004 },
-        { nombre: "🔴 7631 - 🥰 Instagram Likes | Max 500K | No Refill ⛔️ | 30K Per Day", precio: 0.00003},
         { nombre: "🔴 6823 - ▶ Me gusta en Instagram Reels | Usuarios reales | Alta calidad | Máximo 20K | Rápido - $0.44 por 1000", precio: 0.00044},
         { nombre: "🔵 ID 277 - Instagram - Me gusta 100% Reales - Baratos - Calidad Media", precio: 0.000171},
-        { nombre: "🔴 7423 ❤️ 💃 Instagram Likes LatinoAmerica | R30 | %100 Usuario Reales | 2K Por Hora", precio: 0.000171}
+        { nombre: "🔴 7423 ❤️ 💃 Instagram Likes LatinoAmerica | R30 | %100 Usuario Reales | 2K Por Hora", precio: 0.000171},
+        { nombre: "🔴 6276 ❤️ Me Gusta - Instagram | 100% Real Usuarios Premium | MAXIMO 1K | Incremento Natural (BARATO Y PREMIUM) ", precio: 0.00012}
       ]);      break;
-    case "vistas":
-      // Código para definir opciones de Vistas...
-      break;
-    case "alcance":
-      // Código para definir opciones de Alcance e Impresiones...
-      break;
-    default:
-      break;
+
   }
 }
 
